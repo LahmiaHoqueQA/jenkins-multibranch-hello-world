@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/LahmiaHoqueQA/jenkins-multibranch-hello-world.git'
+                git branch: 'feature/greeting', url: 'https://github.com/LahmiaHoqueQA/jenkins-multibranch-hello-world.git'
             }
         }
         stage('Compile') {
